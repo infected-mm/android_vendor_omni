@@ -76,3 +76,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
 ifeq ($(ROM_BUILDTYPE),NIGHTLY)
     WITH_DEXPREOPT := true
 endif
+# Inherite sabermod vendor
+SM_VENDOR := vendor/sm
+include $(SM_VENDOR)/Main.mk
+
